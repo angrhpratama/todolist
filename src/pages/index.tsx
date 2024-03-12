@@ -1,29 +1,33 @@
 import { DeleteIcon } from "@chakra-ui/icons"
 import { Box, Button, Center, Checkbox, Heading, Input, List, ListItem, Text } from "@chakra-ui/react"
 
-
 function Todolist() {
+    // const [input, setText] = useState<string>('');
+
     return (
         <form>
-            <Box
-                borderRadius='25'
-                width='100%'
-                bg='tomato'
-                p='3'
-                color='white'
-                textAlign='center'
-            >
-                <Text as='kbd' fontSize='35px'>
-                    <Heading>
-                        To do list
-                    </Heading>
-                </Text>
-            </Box>
+            <Center>
+                <Box
+                    borderRadius='25'
+                    width='80%'
+                    bg='tomato'
+                    p='2'
+                    color='white'
+                    textAlign='center'
+                    mt='6'
+                >
+                    <Text as='kbd' fontSize='25px'>
+                        <Heading>
+                            To do list
+                        </Heading>
+                    </Text>
+                </Box>
+            </Center>
             <Center>
                 <Box
                     mt='25'
                     width='15cm'
-                    // height='70'
+                    height='9cm'
                     borderWidth='2px'
                     borderRadius='lg'
                     overflow='hidden'
@@ -32,7 +36,7 @@ function Todolist() {
                 >
                     <Heading fontSize='medium' mt='2'>
                         <Center>
-                    Add your list here!!!☺️
+                            Add your list here!!!☺️
                         </Center>
                     </Heading>
                     <List spacing={3} mt='3'>
@@ -57,12 +61,25 @@ function Todolist() {
                             </Checkbox>
                         </ListItem>
                         <Center>
-                            <DeleteIcon />
+                            <DeleteIcon mt='7' />
                         </Center>
-                        <Input height='8' borderColor='black' />
+                        <Center>
+                            <Input
+                                height='8'
+                                borderColor='black'
+                                width='12cm'
+                            >
+                            </Input>
+                        </Center>
                     </List>
                     <Center>
-                        <Button colorScheme='orange'>Add To</Button>
+                        <Button
+                            bg='tomato'
+                            mt='3'
+                            color='white'
+                        >
+                            Add To
+                        </Button>
                     </Center>
                 </Box>
             </Center >
